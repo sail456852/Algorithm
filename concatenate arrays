@@ -1,0 +1,9 @@
+//concatenating two arrays   . 
+//using the standard library function . 
+#include <algorithm>
+
+std::copy(BeginOfArray,EndOfArray,BeginofDestination) 
+//This function is deprecated in visual studio , but works well in codeblocks . 
+//in visual studio ,you should use stdext::checked_array_iterator<
+std::copy(BeginOfArray,EndOfArray ,stdext::checked_array_iterator<int*>(Array, length) );
+//or else it will cause C4996 error . 
